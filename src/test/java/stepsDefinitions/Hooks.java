@@ -1,20 +1,16 @@
-import io.appium.java_client.AppiumDriver;
+package stepsDefinitions;
+
 import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.By;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
-import java.time.temporal.ChronoUnit;
+import java.util.concurrent.TimeUnit;
 
-public class Hooks {
-    AppiumDriver driver;
-
-    @BeforeTest
+public class Hooks extends BaseClass{
+    @Before
     public void setUp() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
@@ -24,10 +20,11 @@ public class Hooks {
         caps.setCapability("platformName", "Android");
         caps.setCapability("autoGrantPermissions", "true");
         driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
-        driver.manage().timeouts().implicitlyWait(Duration.of(10, ChronoUnit.SECONDS));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @AfterTest
+
+    @After
     public void tearDown() {
         driver.quit();
     }
