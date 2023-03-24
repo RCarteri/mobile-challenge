@@ -1,27 +1,17 @@
 package map;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
+import stepsDefinitions.BaseClass;
 
 import java.util.List;
 
-public class ProductListMap extends BasePage {
-    public ProductListMap(AppiumDriver driver) {
-        super(driver);
-    }
-
-    @AndroidFindBy(id = "Button1")
-    MobileElement newProduct;
-
-    @AndroidFindBy(id = "txt_codigo")
-    List<MobileElement> listCodProduct;
-
+public class ProductListMap extends BaseClass {
     public void clickNewProduct() {
-        newProduct.click();
+        driver.findElement(By.id("Button1")).click();
     }
 
     public List<MobileElement> getListCodProduct() {
-        return listCodProduct;
+        return driver.findElements(By.id("txt_codigo"));
     }
 }

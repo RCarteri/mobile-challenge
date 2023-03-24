@@ -1,60 +1,35 @@
 package map;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import stepsDefinitions.BaseClass;
 
-public class NewProductMap extends BasePage {
-    public NewProductMap(AppiumDriver driver) {
-        super(driver);
-    }
-
-    @AndroidFindBy(id = "txt_codigo")
-    WebElement input_code;
-
-    @AndroidFindBy(id = "txt_descricao")
-    WebElement input_description;
-
-    @AndroidFindBy(id = "txt_unidade")
-    WebElement input_packing;
-
-    @AndroidFindBy(id = "txt_quantidade")
-    WebElement input_amount;
-
-    @AndroidFindBy(id = "txt_valunit")
-    WebElement input_unitValue;
-
-    @AndroidFindBy(id = "txt_lote")
-    WebElement input_lot;
-
-    @AndroidFindBy(id = "btn_gravar_assunto")
-    WebElement btn_save;
-
-    public WebElement getInput_code() {
-        return input_code;
+public class NewProductMap extends BaseClass {
+        public WebElement getInput_code() {
+        return driver.findElement(By.id("txt_codigo"));
     }
 
     public WebElement getInput_description() {
-        return input_description;
+        return driver.findElement(By.id("txt_descricao"));
     }
 
     public WebElement getInput_packing() {
-        return input_packing;
+        return driver.findElement(By.id("txt_unidade"));
     }
 
     public WebElement getInput_amount() {
-        return input_amount;
+        return driver.findElement(By.id("txt_quantidade"));
     }
 
     public WebElement getInput_unitValue() {
-        return input_unitValue;
+        return driver.findElement(By.id("txt_valunit"));
     }
 
     public WebElement getInput_lot() {
-        return input_lot;
+        return driver.findElement(By.id("txt_lote"));
     }
 
     public void clickBtn_save() {
-        btn_save.click();
+        driver.findElement(By.id("btn_gravar_assunto")).click();
     }
 }

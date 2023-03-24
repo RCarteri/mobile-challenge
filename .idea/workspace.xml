@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d4709a5-5e8c-4a1d-ac38-9b113b7b0f9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2d4709a5-5e8c-4a1d-ac38-9b113b7b0f9e" name="Changes" comment="error NoSuchMethodException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/map/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/map/BasePage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/map/NewProductMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/NewProductMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/map/ProductListMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/ProductListMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/NewProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NewProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinitions/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinitions/CreateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/CreateProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateProduct.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/mapWithAnnotation" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -42,6 +41,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/scenarios" />
+                    <option name="lastUsedInstant" value="1679692815" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/mapWithAnnotation" />
                     <option name="lastUsedInstant" value="1679691886" />
@@ -74,17 +77,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/ruehlein/git/mobile-challenge/src/test/java/stepsDefinitions",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ruehlein/git/mobile-challenge/src/test/java/stepsDefinitions&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ruehlein\git\mobile-challenge\apps" />
@@ -173,21 +176,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/pages/ProductListPage.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/map/ProductListMap.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
