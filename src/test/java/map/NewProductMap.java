@@ -1,35 +1,60 @@
 package map;
 
-import org.openqa.selenium.By;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
-import stepsDefinitions.BaseClass;
+import org.openqa.selenium.support.FindBy;
 
-public class NewProductMap extends BaseClass {
-        public WebElement getInput_code() {
-        return driver.findElement(By.id("txt_codigo"));
+public class NewProductMap extends BasePage {
+    public NewProductMap(AppiumDriver driver) {
+        super(driver);
     }
 
-    public WebElement getInput_description() {
-        return driver.findElement(By.id("txt_descricao"));
+    @FindBy(id = "txt_codigo")
+    WebElement inputCode;
+
+    @FindBy(id = "txt_descricao")
+    WebElement inputDescription;
+
+    @FindBy(id = "txt_unidade")
+    WebElement inputPacking;
+
+    @FindBy(id = "txt_quantidade")
+    WebElement inputAmount;
+    
+    @FindBy(id = "txt_valunit")
+    WebElement inputUnitValue;
+
+    @FindBy(id = "txt_lote")
+    WebElement inputLot;
+
+    @FindBy(id = "btn_gravar_assunto")
+    WebElement btnSave;
+
+    public WebElement getInputCode() {
+        return inputCode;
     }
 
-    public WebElement getInput_packing() {
-        return driver.findElement(By.id("txt_unidade"));
+    public WebElement getInputDescription() {
+        return inputDescription;
     }
 
-    public WebElement getInput_amount() {
-        return driver.findElement(By.id("txt_quantidade"));
+    public WebElement getInputPacking() {
+        return inputPacking;
     }
 
-    public WebElement getInput_unitValue() {
-        return driver.findElement(By.id("txt_valunit"));
+    public WebElement getInputAmount() {
+        return inputAmount;
     }
 
-    public WebElement getInput_lot() {
-        return driver.findElement(By.id("txt_lote"));
+    public WebElement getInputUnitValue() {
+        return inputUnitValue;
     }
 
-    public void clickBtn_save() {
-        driver.findElement(By.id("btn_gravar_assunto")).click();
+    public WebElement getInputLot() {
+        return inputLot;
+    }
+
+    public void clickBtnSave() {
+         btnSave.click();
     }
 }

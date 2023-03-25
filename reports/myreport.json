@@ -1,0 +1,176 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4796969100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I access the new product page",
+            "match": {
+              "location": "stepsDefinitions.CreateProduct.iAccessTheNewProductPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-25T12:56:55.951Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12400157900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsDefinitions.Hooks.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "CT001 - Create Product",
+        "description": "",
+        "id": "create-product;ct001---create-product",
+        "after": [
+          {
+            "result": {
+              "duration": 1234979200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsDefinitions.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3594360200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in the new product form with the dataset",
+            "match": {
+              "location": "stepsDefinitions.CreateProduct.iFillInTheNewProductFormWithTheDataset(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "code",
+                  "description",
+                  "packing",
+                  "amount",
+                  "unitValue",
+                  "lot"
+                ]
+              },
+              {
+                "cells": [
+                  "1",
+                  "banana",
+                  "box",
+                  "3",
+                  "3",
+                  "4"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1624968600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the item should appear in the list",
+            "match": {
+              "location": "stepsDefinitions.CreateProduct.theItemShouldAppearInTheList()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3602529600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I remove a quantity item from this product",
+            "match": {
+              "location": "stepsDefinitions.EditAmount.iRemoveAQuantityItemFromThisProduct(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "amount",
+                  "reason",
+                  "reference"
+                ]
+              },
+              {
+                "cells": [
+                  "1",
+                  "sell",
+                  "123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1757621400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "stock must have less stock",
+            "match": {
+              "location": "stepsDefinitions.EditAmount.stockMustHaveLessStock()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@newProduct"
+          },
+          {
+            "name": "@newProduct-CT001"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Create product",
+    "description": "",
+    "id": "create-product",
+    "keyword": "Feature",
+    "uri": "classpath:features/CreateProduct.feature",
+    "tags": [
+      {
+        "name": "@newProduct",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

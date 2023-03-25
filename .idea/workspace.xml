@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d4709a5-5e8c-4a1d-ac38-9b113b7b0f9e" name="Changes" comment="error NoSuchMethodException">
+    <list default="true" id="2d4709a5-5e8c-4a1d-ac38-9b113b7b0f9e" name="Changes" comment="feature(DecreaseAmount)1.1.0: Migrate to FindBy annotation and add decrease amount step">
+      <change afterPath="$PROJECT_DIR$/reports/myreport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/myreport.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/map/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/map/EditAmountMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/EditAmountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/TestSuiteCreateProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/EditAmount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/map/BasePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/map/NewProductMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/NewProductMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/map/ProductListMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/ProductListMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/NewProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NewProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductListPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinitions/CreateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/CreateProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateProduct.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +43,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -96,7 +106,7 @@
       <recent name="stepsDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: CT001 - Create Product">
+  <component name="RunManager" selected="JUnit.TestSuiteCreateProduct">
     <configuration name="Scenario: CT001 - Create Product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateProduct.feature" />
@@ -113,6 +123,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuiteCreateProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mobile-challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.TestSuiteCreateProduct" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,9 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSuiteCreateProduct" />
         <item itemvalue="Cucumber Java.Scenario: CT001 - Create Product" />
-        <item itemvalue="TestNG.Hooks.click_App_Button" />
         <item itemvalue="TestNG.Hooks.clickNew" />
+        <item itemvalue="TestNG.Hooks.click_App_Button" />
+        <item itemvalue="Cucumber Java.Scenario: CT001 - Create Product" />
       </list>
     </recent_temporary>
   </component>
@@ -176,5 +203,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature(DecreaseAmount)1.1.0: Migrate to FindBy annotation and add decrease amount step" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature(DecreaseAmount)1.1.0: Migrate to FindBy annotation and add decrease amount step" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/EditAmountPage.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

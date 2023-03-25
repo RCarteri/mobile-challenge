@@ -1,17 +1,44 @@
 package map;
 
-import io.appium.java_client.MobileElement;
-import org.openqa.selenium.By;
-import stepsDefinitions.BaseClass;
+import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
-public class ProductListMap extends BaseClass {
-    public void clickNewProduct() {
-        driver.findElement(By.id("Button1")).click();
+public class ProductListMap extends BasePage {
+    public ProductListMap(AppiumDriver driver) {
+        super(driver);
     }
 
-    public List<MobileElement> getListCodProduct() {
-        return driver.findElements(By.id("txt_codigo"));
+    @FindBy(id = "Button1")
+    WebElement newProduct;
+
+    @FindBy(id = "txt_codigo")
+    WebElement txtCode;
+
+    @FindBy(id = "txt_quantidade")
+    WebElement txtAmount;
+
+    @FindBy(id = "saida")
+    WebElement descrease;
+
+    public void clickNewProduct() {
+        newProduct.click();
+    }
+
+    public WebElement getListCodProduct() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return txtCode;
+    }
+
+    public void clickDecreaseAmount() {
+        descrease.click();
+    }
+
+    public WebElement getTxtAmount() {
+        return txtAmount;
     }
 }
