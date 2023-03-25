@@ -1,27 +1,44 @@
 package map;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
-
-import java.util.List;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class ProductListMap extends BasePage {
     public ProductListMap(AppiumDriver driver) {
         super(driver);
     }
 
-    @AndroidFindBy(id = "Button1")
-    MobileElement newProduct;
+    @FindBy(id = "Button1")
+    WebElement newProduct;
 
-    @AndroidFindBy(id = "txt_codigo")
-    List<MobileElement> listCodProduct;
+    @FindBy(id = "txt_codigo")
+    WebElement txtCode;
+
+    @FindBy(id = "txt_quantidade")
+    WebElement txtAmount;
+
+    @FindBy(id = "saida")
+    WebElement descrease;
 
     public void clickNewProduct() {
         newProduct.click();
     }
 
-    public List<MobileElement> getListCodProduct() {
-        return listCodProduct;
+    public WebElement getListCodProduct() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return txtCode;
+    }
+
+    public void clickDecreaseAmount() {
+        descrease.click();
+    }
+
+    public WebElement getTxtAmount() {
+        return txtAmount;
     }
 }

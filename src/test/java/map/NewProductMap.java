@@ -1,60 +1,60 @@
 package map;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class NewProductMap extends BasePage {
     public NewProductMap(AppiumDriver driver) {
         super(driver);
     }
 
-    @AndroidFindBy(id = "txt_codigo")
-    WebElement input_code;
+    @FindBy(id = "txt_codigo")
+    WebElement inputCode;
 
-    @AndroidFindBy(id = "txt_descricao")
-    WebElement input_description;
+    @FindBy(id = "txt_descricao")
+    WebElement inputDescription;
 
-    @AndroidFindBy(id = "txt_unidade")
-    WebElement input_packing;
+    @FindBy(id = "txt_unidade")
+    WebElement inputPacking;
 
-    @AndroidFindBy(id = "txt_quantidade")
-    WebElement input_amount;
+    @FindBy(id = "txt_quantidade")
+    WebElement inputAmount;
+    
+    @FindBy(id = "txt_valunit")
+    WebElement inputUnitValue;
 
-    @AndroidFindBy(id = "txt_valunit")
-    WebElement input_unitValue;
+    @FindBy(id = "txt_lote")
+    WebElement inputLot;
 
-    @AndroidFindBy(id = "txt_lote")
-    WebElement input_lot;
+    @FindBy(id = "btn_gravar_assunto")
+    WebElement btnSave;
 
-    @AndroidFindBy(id = "btn_gravar_assunto")
-    WebElement btn_save;
-
-    public WebElement getInput_code() {
-        return input_code;
+    public WebElement getInputCode() {
+        return inputCode;
     }
 
-    public WebElement getInput_description() {
-        return input_description;
+    public WebElement getInputDescription() {
+        return inputDescription;
     }
 
-    public WebElement getInput_packing() {
-        return input_packing;
+    public WebElement getInputPacking() {
+        return inputPacking;
     }
 
-    public WebElement getInput_amount() {
-        return input_amount;
+    public WebElement getInputAmount() {
+        return inputAmount;
     }
 
-    public WebElement getInput_unitValue() {
-        return input_unitValue;
+    public WebElement getInputUnitValue() {
+        return inputUnitValue;
     }
 
-    public WebElement getInput_lot() {
-        return input_lot;
+    public WebElement getInputLot() {
+        return inputLot;
     }
 
-    public void clickBtn_save() {
-        btn_save.click();
+    public void clickBtnSave() {
+         btnSave.click();
     }
 }

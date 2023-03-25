@@ -9,9 +9,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class Hooks extends BaseClass{
+public class Hooks extends BaseClass {
     @Before
-    public void setUp() throws MalformedURLException {
+    public static void before() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("automationName", "UiAutomator2");
@@ -23,9 +23,8 @@ public class Hooks extends BaseClass{
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-
     @After
-    public void tearDown() {
+    public void after() {
         driver.quit();
     }
 }

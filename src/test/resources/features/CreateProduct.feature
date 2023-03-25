@@ -10,3 +10,7 @@ Feature: Create product
             | code | description | packing | amount | unitValue | lot |
             | 1    | banana      | box     | 3      | 3         | 4   |
         Then the item should appear in the list
+        When I remove a quantity item from this product
+            | amount | reason | reference |
+            | 1      | sell   | 123       |
+        Then stock must have less stock

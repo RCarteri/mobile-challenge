@@ -3,6 +3,7 @@ package pages;
 import io.appium.java_client.AppiumDriver;
 import map.ProductListMap;
 
+import java.util.List;
 import java.util.Map;
 
 public class ProductListPage extends ProductListMap {
@@ -14,8 +15,11 @@ public class ProductListPage extends ProductListMap {
         clickNewProduct();
     }
 
-    public boolean isItemDisplayed(Map<String, String> dataset) {
-        return getListCodProduct().stream()
-                .anyMatch(codProd -> codProd.getText().equals(dataset.get("code")));
+    public boolean isItemDisplayed(List<Map<String, String>> dataset) {
+        return getListCodProduct().getText().equals(dataset.get(0).get("code"));
+    }
+
+    public void accessEditAmountPage() {
+        clickDecreaseAmount();
     }
 }

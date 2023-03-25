@@ -7,8 +7,15 @@ This project must contain at least 3 different scenarios.
 Required: Use Page Objects pattern.
 Desirable: Generate a report of the tests performed.
 
-In this branch the follow error is happening when the test is executed:
-```
-Step failed
-java.lang.RuntimeException: java.lang.NoSuchMethodException: jdk.proxy2.$Proxy11.proxyClassLookup()
-```
+## Environment
+- Java 17
+- Maven 3.9.0
+- Appium 1.22.3-4
+- AndroidStudio Pixel 6 API 33
+
+## Execution
+This code can be executed by [runner][runners], by [feature][features] and with maven by [pom.xml][pom]. Reports are generated after execution and are saved in the directory referring to the execution time.
+
+[runners]: src/test/java/runners
+[features]: src/test/resources/features
+[pom]: pom.xml
