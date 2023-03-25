@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d4709a5-5e8c-4a1d-ac38-9b113b7b0f9e" name="Changes" comment="feature(DecreaseAmount)1.1.0: Migrate to FindBy annotation and add decrease amount step">
-      <change afterPath="$PROJECT_DIR$/reports/myreport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/myreport.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/map/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/map/EditAmountMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/EditAmountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/TestSuiteCreateProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/EditAmount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2d4709a5-5e8c-4a1d-ac38-9b113b7b0f9e" name="Changes" comment="doc(readme)1.1.0: update readme">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/map/NewProductMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/NewProductMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/map/ProductListMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/map/ProductListMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/NewProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NewProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinitions/CreateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/CreateProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepsDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateProduct.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/myreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/myreport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/myreport.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/myreport.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +194,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature(DecreaseAmount)1.1.0: Migrate to FindBy annotation and add decrease amount step" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature(DecreaseAmount)1.1.0: Migrate to FindBy annotation and add decrease amount step" />
+    <MESSAGE value="doc(readme)1.1.0: update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="doc(readme)1.1.0: update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
